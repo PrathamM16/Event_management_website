@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Castle - Event Management Company</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any additional CSS files here -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Add any additional JavaScript libraries here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>  
+        <a href="index.html" class="logo"><span>E</span>vent Castle</a>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:prathammanju2002@gmail.com">Mail Us</a></li>
+        </ul>
+        <a href="book.html" class="btn">Give a Call to Book an Event <i class='bx bx-calendar'></i></a>
+    </header>
+    
+
+    <section id="home" class="home">
+        <div class="hero-info">
+            <h3>Welcome To Event Castle</h3>
+            <h1>Your Partner in Event Management</h1>
+            <div class="text-animate">
+                <h2>Creating Unforgettable Events</h2>
+            </div>
+            <div class="btn-box">
+                <a href="services.html" class="btn">Explore Our Services <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="C:\Users\Pratham.m\Downloads\GLAM.pdf" class="btn d-CV">Download Brochure <i class='bx bxs-download' ></i></a>
+            </div>
+           
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <span></span>
+                </div>
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <span></span>
+                </div>
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img src="E:\PRATHAM FILES\Event\img1.jpg" alt="Event Castle Image">
+            <div class="rotate-text">
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+    <section id="our-events" class="our-events">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="E:/PRATHAM FILES/Event/event.mp4" type="video/mp4">
+                <!-- Add additional source elements for other video formats -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div> <!-- Add an overlay to enhance readability of content -->
+            <div class="content">
+                <h2>Our Events</h2>
+                <!-- Add any additional content you want to display over the video -->
+                <p>Explore our past events and get inspired!</p>
+                <!-- <a href="#" class="btn">View Events</a> -->
+            </div>
+        </div>
+        <style>
+            /* Add this CSS to your existing stylesheet */
+
+.our-events {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make the section cover the full viewport height */
+    overflow: hidden; /* Hide any content that might overflow */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Set the container height to match the viewport height */
+    overflow: hidden; /* Hide any overflow from the video */
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay for readability */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Adjust text color for better contrast */
+    z-index: 1; /* Ensure content appears above the video */
+}
+
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+        </style>
+    </section>
+    
+
+    
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="center">Our Services</h2>
+            <div class="service-item" id="wedding">
+                <div class="row">
+                    <div class="col-left">
+                        <h3 class="center">Wedding Planning</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nunc eget est consequat feugiat ac vitae justo.</p>
+                        <a href="evt1.html" class="visit-btn">Visit Wedding Planning</a>
+                    </div>
+                    <div class="col-right">
+                        <a href="E:\PRATHAM FILES\Event\img1.jpg" target="_blank">
+                            <img src="E:\PRATHAM FILES\Event\img1.jpg" alt="Wedding Planning">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item alternate" id="corporate">
+                <div class="row">
+                    <div class="col-left">
+                        <img src="E:/PRATHAM FILES/Event/imgc.jpg" alt="Corporate Events">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="center">Corporate Events</h3>
+                        <p>Integer rhoncus eget dolor id luctus. Sed interdum, ipsum vel aliquet consectetur, odio libero pellentesque risus, eu consectetur tortor dolor eu nisl.</p>
+                        <a href="#corporate" class="visit-btn">Visit Corporate Events</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item" id="birthday">
+                <div class="row">
+                    <div class="col-left">
+                        <h3 class="center">Birthday Parties</h3>
+                        <p>Sed et ligula vel orci efficitur convallis. Nam vehicula vestibulum mauris, id tristique magna suscipit ac.</p>
+                        <a href="#birthday" class="visit-btn">Visit Birthday Parties</a>
+                    </div>
+                    <div class="col-right">
+                        <img src="E:\PRATHAM FILES\Event\imgb.jpg" alt="Birthday Parties">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.service-item img');
+
+            items.forEach(item => {
+                item.addEventListener('mousemove', e => {
+                    const x = e.pageX - e.target.offsetLeft;
+                    const y = e.pageY - e.target.offsetTop;
+
+                    e.target.style.transformOrigin = `${x}px ${y}px`;
+                    e.target.style.transform = 'scale(1.1)';
+                });
+
+                item.addEventListener('mouseleave', e => {
+                    e.target.style.transformOrigin = 'center center';
+                    e.target.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+    
+    
+    
+    
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+<!-- //*-----------------------------footer-----------------*/ -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-row">
+                   
+                    <div class="footer-col">
+                        <img src="E:\PRATHAM FILES\Event\imgb.jpg" alt="Event Castle" width="150">
+                        <p>Your go-to destination for seamless event management experiences.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Events</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="branches">Branches: [List of branches here]</p>
+                <p class="HelplineNumber">Helpline Number: [Your helpline number]</p>
+                <p class="copyright">&copy; 2024 Event Castle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Castle - Event Management Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="single.css">
+    <!-- Add any additional CSS files here -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Add any additional JavaScript libraries here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>  
+        <a href="index.html" class="logo"><span>E</span>vent Castle</a>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:prathammanju2002@gmail.com">Mail Us</a></li>
+        </ul>
+        <a href="book.html" class="btn">Give a Call to Book an Event <i class='bx bx-calendar'></i></a>
+    </header>
+    
+
+<!---------------single product details------------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="E:\PRATHAM FILES\Event\img1.jpg" width="100%" id="product-img">
+            </div>
+            <div class="col-2">
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Event Content.</p>
+            </div>
+        </div>
+    </div>
+
+<!----------title---------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Other Events</h2>
+        <p>View More</p>
+    </div>
+</div>
+<!----------------products------------->
+<div class="small-container">
+    <div  class="row">
+        <div class="col-4">
+            <img src="E:\PRATHAM FILES\Event\img1.jpg">
+            <h4>Birthaday Party</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>₹79.00</p>
+        </div>
+        <div class="col-4">
+            <img src="E:\PRATHAM FILES\Event\img1.jpg">
+            <h4>Marriage</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>₹189.00</p>
+        </div>
+        <div class="col-4">
+            <img src="E:\PRATHAM FILES\Event\img1.jpg">
+            <h4>Enagagement</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>                    
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>₹110.00</p>
+        </div>
+        <div class="col-4">
+            <img src="E:\PRATHAM FILES\Event\img1.jpg">
+            <h4>Gettogether</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>₹119.00</p>
+        </div>
+    </div>
+</div>
+
+<!--------------------footer---------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-2">
+                <img src="E:\PRATHAM FILES\Event\logo.png" width="450px" height="150">
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benifits of Event Accessible to Everyone.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="branches">Branches: Bengaluru, Chennai, Kerala, Mumbai, Pune</p>
+        <p class="HelplineNumber">Helpline Number:080-26648886</p>
+        <p class="copyright">CopyRight 2022-Premier Sports</p>
+    </div>
+</div>
+
+<!--------------------js for product gallery------------->    
+<script>
+    var productImg = document.getElementById("product-img");
+    var smallImg = document.getElementsByClassName("small-img");
+    for (var i = 0; i < smallImg.length; i++) {
+        smallImg[i].onclick = function() {
+            productImg.src = this.src;
+        }
+    }
+</script>
+</body>
+</html>
